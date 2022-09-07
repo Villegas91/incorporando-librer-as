@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+  </head>
+  <!--CONTENEDOR DE LA PAGINA PARA DISPLAY GRID!-->
+  <body class="container">
+    <!--CABECERA CON EL LOGO, EL MENU DEPLEGABLE,LOGIN Y CARRITO!-->
+
+    <header class="header">
+      <div class="logo">
+        <h1>Ecommerce</h1>
+        <div id = "buscador">
+          <input type="search" placeholder="Buscar productos" id="search">
+          <div  class="buscador-logo">
+          <img id="lupa" src="./img/busqueda.png" alt="lupa">
+          </div>
+        </div>
+      </div>
+      <div class="barra">
+        <ul>
+          <a href=""><li>Categoria</li></a>
+          <a href=""><li>Ofertas</li> </a>
+          <a href=""><li>Sobre Nosotros</li></a>
+          <a href=""><li>Ingresa</li></a>
+          <button id="carrito">🛒</button>
+          <div class="totalCompra">
+            <p>Total $</p>
+            <span id="totalCompra"></span>
+          </div>
+          </div>
+        </ul>
+      </div>
+    </header> 
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="carritoCerrar"><i class="fas fa-times-circle">x</i></button>
+          <div id="carrito-contenedor">
+          </div>
+          <p class="precioProducto">Precio total: $  <span id="precioTotal">0</span></p>
+          <div class="pie-cart">
+          <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+          <button  id="confirmarCompra" class="boton-agregar">Confirmar compra</button>
+          </div>
+      </div>
+  </div>
+
+    <!--CARRUSEL CON BOOTSTRAP!-->
+    <section class="resto">      
+      <article id="ofertas"> 
+      </article>
+    </section>
+    <footer class="pie">
+      <h2>Pie de Pagina</h2>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+
+    
+  </body>
+</html>
